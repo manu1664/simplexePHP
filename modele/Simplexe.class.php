@@ -210,7 +210,7 @@ class Simplexe {
     
     //Fonction qui fait entrer un nom de variable dans la base
     public function changementVariableBase(){
-        $matriceNomVariableBase[$this->pivot->getLigne()] = $matriceNomVariable[$this->pivot->getColonne()];
+        $this->matriceNomVariableBase[$this->pivot->getLigne()] = $this->matriceNomVariable[$this->pivot->getColonne()];
     }
     
     //Fonction pour afficher infos sur le pivot
@@ -227,7 +227,7 @@ class Simplexe {
     
     //Fonction pour afficher les infos sur la variable qui entre dans la base
     public function variableBase () {
-        $texteVariableBase = "La variable qui rentre dans la base est : " . $this->matriceNomVariable[$this->pivot->getColonne()];
+        $texteVariableBase = "<strong>La variable qui rentre dans la base est : </strong>" . $this->matriceNomVariable[$this->pivot->getColonne()];
 
         return $texteVariableBase;
     }
@@ -235,7 +235,7 @@ class Simplexe {
     //Fonction qui affiche les infos sur le max
     public function valeurMaxi($maMatrice){
         $valeurMax = -($maMatrice->getMatrice()[count($maMatrice->getMatrice())-1][count($maMatrice->getMatrice()[0])-1]);
-        $texteValeurMax = "Le maximum est : " . $valeurMax;
+        $texteValeurMax = "<strong>Le maximum est : </strong>" . $valeurMax;
         return $texteValeurMax;
     }
     
@@ -247,9 +247,9 @@ class Simplexe {
     
     //Affiche caractéristique matrice fin
     public function toStringFin(){
-        $resultat = 'Il n\'y a plus d\'itération possible. Le programme est fini'
+        $resultat = '<div class="alert alert-success" role="alert">Il n\'y a plus d\'itération possible. Le programme est fini'
                 . '<br/>' . ' Nombre d\'itérations effectuées : ' . $this->getNbIteration()
-                . '<br/>' . $this->valeurMaxi($this->matrice);
+                . '<br/>' . $this->valeurMaxi($this->matrice).'</div>';
 
         return $resultat;
     }
@@ -288,4 +288,3 @@ class Simplexe {
         $this->numMethode = $numMethode;
     }
 }
-

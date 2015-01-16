@@ -3,6 +3,7 @@ require_once 'modele/Simplexe.class.php';
 $simplex = new Simplexe($_POST['NbContrainte'], $_POST['NbVariable']);
 $simplex->remplirMatrice();
 $simplex->creationMatriceNomVariable();
+$simplex->creationMatriceNomVariableBase();
 $noms = $simplex->getMatriceNomVariable();
 
 while($simplex->chercheMax($simplex->getMatrice()) > 0 ){

@@ -1,4 +1,4 @@
-<?php $this->titre = "Le simplexe en toute simplicité";?>
+<?php $this->titre = "Le simplexe en PHP";?>
 
 <!-- Formulaire du simplexe -->
 <div class="col-md-8">

@@ -1,4 +1,4 @@
-<?php $this->titre = "Les fonctions du simplexe en toute modestie"; ?>
+<?php $this->titre = "Le simplexe en PHP"; ?>
 
 <?php
 require 'modele/Formulaire.class.php';

@@ -14,15 +14,14 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         
-        <title>Programmation Linéaire - La méthode du simplexe en PHP</title>
+        <title>Programmation Linéaire - La simplexe en PHP</title>
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <h1><a href="index.php">Programmation Linéaire </a><br/>La méthode du simplexe en PHP</h1>
+                <h1><a href="index.php">RCP101 Recherche opérationnelle et aide à la décision</a><br/>La programmation linéaire - Le simplexe</h1>
                 <p>
-                    En recherche opérationnelle (RO), la programmation linéaire est la méthode la plus importante
-                    car elle permet de connaitre la solution optimum définie par des contraintes.
+                    Projet d'étude : l'algorithme du simplexe en PHP. 
                 </p>
             </div>
             <div class="row">
@@ -34,7 +33,8 @@
                 <footer>
                     <br><br>
                     <hr>
-                    &copy; Emmanuel LEMETTRE  |  <a href="www.github.com">code source</a>
+                    &copy; Emmanuel LEMETTRE  |  <a href="https://github.com/manu1664/simplexePHP" target="blank">code source</a>
+                    <hr>
                 </footer>
             </div>
         </div>

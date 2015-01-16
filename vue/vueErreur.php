@@ -1,3 +1,3 @@
-<?php $this->titre = "Mon Blog - Erreur !"; ?>
+<?php $this->titre = "Le simplexe en PHP - Erreur !"; ?>
 
 <p><?= $msgErreur ?></p>
