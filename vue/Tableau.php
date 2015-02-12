@@ -17,11 +17,12 @@
   <tr>
       <td><?php if ($i != ($simplex->getMatrice()->getNbLignes()-1)){echo '<strong>'. $simplex->getMatriceNomVariableBase()[$i] .'</strong>';}else{echo'<strong>&Delta;j</strong>';}?></td>
       <?php for($j = 0; $j < $simplex->getMatrice()->getNbColonnes(); $j++): ?>
-      <td><?php echo $simplex->getValeurMatrice($simplex->getMatrice(),$i, $j) ?></td>
+      <td><?php echo round($simplex->getValeurMatrice($simplex->getMatrice(),$i, $j), 2) ?></td>
       <?php endfor; ?> 
   </tr>    
   <?php endfor; ?>
 </table>
+<br><br>
 
 
 
