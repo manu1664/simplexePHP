@@ -26,19 +26,19 @@ class Simplexe {
     
     //Fonction pour resoudre le probleme
     public function resolutionProbleme(){
-        $max = $this->chercheMax($this->matrice);
+       // $max = $this->chercheMax($this->matrice);
 
-        if($max>0){
+       // if($max>0){
             //$this->afficheMatrice($this->matriceDepart);
             $this->cherchePivot($this->matrice);
             $this->soustractionLigne($this->matrice);
             $this->divisionLignePivot($this->matrice);
             $this->changementVariableBase();
             $this->nbIteration++;
-         }
+        // }
          //echo 'Fin du probleme<br>';
          //var_dump($this->matrice);
-         echo '<br><hr>';
+         //echo '<br><hr>';
     }
     
     //Remplissage de la matrice avec les valeurs des coefficients + matrice identite + matrice result + matrice fonction eco
@@ -238,7 +238,7 @@ class Simplexe {
         $texteValeurMax = "<strong>Le maximum est : </strong>" . $valeurMax;
         return $texteValeurMax;
     }
-    
+        
     //Affiche caractéristique matrice
     public function toString() {
         $resultat = $this->pivot() . "<br>" . $this->variableBase() . "<br>" . $this->valeurMaxi($this->matrice);
@@ -249,7 +249,7 @@ class Simplexe {
     public function toStringFin(){
         $resultat = '<div class="alert alert-success" role="alert">Il n\'y a plus d\'itération possible. Le programme est fini'
                 . '<br/>' . ' Nombre d\'itérations effectuées : ' . $this->getNbIteration()
-                . '<br/>' . $this->valeurMaxi($this->matrice).'</div>';
+                . '<br/>' . $this->valeurMaxi($this->matrice) . '</div>';
 
         return $resultat;
     }
