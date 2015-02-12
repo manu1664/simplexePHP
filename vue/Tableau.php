@@ -1,8 +1,7 @@
-<h3>Résultat du simplexe <small> | intération <?php echo $simplex->getNbIteration();  ?></small></h3>
-<p>
-    <?php echo $simplex->toString(); ?>
-</p>
 <hr>
+<h3>Résultat du simplexe <small> | intération <?php echo $simplex->getNbIteration();  ?></small></h3>
+
+<br>
 <table class="table table-bordered">
     <tr>
         <th>Matrice</th>
@@ -22,7 +21,14 @@
   </tr>    
   <?php endfor; ?>
 </table>
-<br><br>
+<br>
+<p>
+    <?php if($simplex->chercheMax($simplex->getMatrice()) > 0) {
+        echo $simplex->toString();
+    }
+    ?>
+</p>
+<br>
 
 
 
